@@ -119,6 +119,7 @@ const S = {
     padding: 0px 5px;
     font-size: 16px;
     min-height: 10px;
+    background-color: #fff;
 
     flex: 1;
     & > input {

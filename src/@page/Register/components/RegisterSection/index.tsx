@@ -171,6 +171,8 @@ export default RegisterSection;
 
 const S = {
   Root: styled.div`
+    background-color: #fff;
+
     margin-top: 20px;
   `,
   Tab: styled.ul`
@@ -191,6 +193,8 @@ const S = {
   `,
 
   TabContent: styled.div`
+    background-color: #fff;
+
     border: 1px solid #dee2e6;
     border-top: none;
 
