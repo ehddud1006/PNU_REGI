@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 export const PATH = {
   MAIN: '/',
   REGISTER: '/register',
+  LOGIN: '/login',
 };
 
 const Router = () => {
@@ -13,6 +14,7 @@ const Router = () => {
     <Routes>
       <Route path={PATH.MAIN} element={<MainPage />} />
       <Route path={PATH.REGISTER} element={<Register />} />
+      <Route path={PATH.LOGIN} element={<Login />} />
     </Routes>
   );
 };

@@ -1,24 +1,21 @@
-// import Input from '@/@components/@shared/Input';
-// import PageTemplate from '@/@components/@shared/PageTemplate';
-// import LoginForm from '@/@page/login/unit/LoginForm';
-import React from 'react';
-
-// import * as Styled from './Login.styles';
+import * as Styled from './Login.styles';
+import Header from '@/@components/@shared/Header/Header';
+import LoginForm from '@/@page/Login/unit/LoginForm';
 
 const Login = () => {
   return (
-    <></>
-    // <PageTemplate isLogin={true}>
-    //   <Styled.Root>
-    //     <Styled.LoginTitleContainer>
-    //       <Styled.LoginTitle>2023학년도 1학기 수강신청</Styled.LoginTitle>
-    //     </Styled.LoginTitleContainer>
+    <>
+      <Header.LoginHeader />
+      <Styled.Root>
+        <Styled.LoginTitleContainer>
+          <Styled.LoginTitle>2023학년도 2학기 수강신청</Styled.LoginTitle>
+        </Styled.LoginTitleContainer>
 
-    //     <Styled.LoginFormContainer>
-    //       <LoginForm />
-    //     </Styled.LoginFormContainer>
-    //   </Styled.Root>
-    // </PageTemplate>
+        <Styled.LoginFormContainer>
+          <LoginForm />
+        </Styled.LoginFormContainer>
+      </Styled.Root>
+    </>
   );
 };
 

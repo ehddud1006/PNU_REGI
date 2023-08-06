@@ -1,4 +1,5 @@
 import { DateTimeContext } from '@/@components/@shared/DateTimeProvider';
+import useViewport from '@/@hooks/@common/useViewPort';
 import alarm from '@/assets/images/alarm.png';
 import downTime from '@/assets/images/downTime.png';
 import { css } from '@emotion/react';
@@ -7,6 +8,7 @@ import { useContext, useEffect, useState } from 'react';
 
 const Timer = () => {
   const { currentDateTime, timeRemaining } = useContext(DateTimeContext);
+  const { viewPort } = useViewport();
 
   const formatTime = (date: any) => {
     const year = date.getFullYear();
@@ -30,18 +32,24 @@ const Timer = () => {
   return (
     <>
       <S.Root>
-        <img width={22} height={22} src={alarm} alt='' style={{ display: 'inline-block', margin: '0 5px 5px 0' }} />
+        <img
+          width={viewPort === 'desktop' ? 22 : 14}
+          height={viewPort === 'desktop' ? 22 : 14}
+          src={alarm}
+          alt=''
+          style={{ display: 'inline-block', margin: '0 5px 5px 0' }}
+        />
         <div style={{ fontWeight: '400' }}>{formatTime(currentDateTime)}</div>
         <S.Bar />
         <img
-          width={22}
-          height={22}
+          width={viewPort === 'desktop' ? 22 : 14}
+          height={viewPort === 'desktop' ? 22 : 14}
           src={downTime}
           alt=''
           style={{ display: 'inline-block', margin: '0 5px 5px 5px' }}
         />
         <div style={{ fontWeight: '400' }}>{formatRemainTime(timeRemaining)}</div>
-        <S.Trick />
+        {viewPort === 'desktop' && <S.Trick />}
       </S.Root>
     </>
   );
@@ -68,6 +76,14 @@ const S = {
 
     font-size: 16px;
     font-weight: 400 !important;
+
+    @media (max-width: 1000px) {
+      height: 100%;
+      right: 0px;
+      padding: 0 10px;
+
+      font-size: 12px;
+    }
   `,
 
   Bar: styled.div`

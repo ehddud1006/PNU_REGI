@@ -14,6 +14,10 @@ function useViewport() {
     if (window.innerWidth <= 1000) {
       setViewPort('tablet');
     }
+
+    if (window.innerWidth <= 500) {
+      setViewPort('mobile');
+    }
   };
 
   useEffect(() => {
