@@ -6,7 +6,7 @@ export const DateTimeContext = createContext<any>({
 });
 
 const DateTimeProvider = ({ children }: any) => {
-  const [currentDateTime, setCurrentDateTime] = useState(new Date('2023-08-08T09:59:55'));
+  const [currentDateTime, setCurrentDateTime] = useState(new Date('2023-08-08T09:59:53'));
   const [timeRemaining, setTimeRemaining] = useState(30 * 60 * 1000);
   const [isFirst, setIsFirst] = useState(true);
 
