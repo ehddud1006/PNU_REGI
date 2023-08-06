@@ -26,7 +26,7 @@ const HeaderDesk = () => {
   }, [pathname]);
 
   function checkTime() {
-    const deadline = new Date('2023-08-08T10:00:00'); // Set to your desired timezone, this example is in UTC
+    const deadline = new Date('2023-08-08T08:00:00'); // Set to your desired timezone, this example is in UTC
 
     if (currentDateTime < deadline) {
       return false;
