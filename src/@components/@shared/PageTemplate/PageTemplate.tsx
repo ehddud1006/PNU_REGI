@@ -1,8 +1,6 @@
-import { PropsWithChildren } from 'react';
-
-import Header from '@/@components/@shared/Header';
-
 import * as Styled from './PageTemplate.styles';
+import Header from '@/@components/@shared/Header';
+import { PropsWithChildren } from 'react';
 
 type PageTemplateProps = {
   isLogin?: boolean;

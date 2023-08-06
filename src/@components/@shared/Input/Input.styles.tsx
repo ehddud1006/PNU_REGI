@@ -1,7 +1,6 @@
+import { hideWithA11y } from '@/styles/mixin';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-
-import { hideWithA11y } from '@/styles/mixin';
 
 export const Root = styled.div<{ isShowLabel?: boolean }>`
   ${({ theme, isShowLabel = true }) => css`

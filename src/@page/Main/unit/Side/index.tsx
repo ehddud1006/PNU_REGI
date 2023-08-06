@@ -1,8 +1,7 @@
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
-
 import LinkList from '@/assets/images/LinkList.png';
 import List from '@/assets/images/List.png';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 
 const Side = () => {
   return (

@@ -1,6 +1,5 @@
-import Text from '@/@components/@shared/Text';
-
 import * as Styled from './CollapseItem.styles';
+import Text from '@/@components/@shared/Text';
 
 const CollapseItem = [
   <>

@@ -1,8 +1,7 @@
+import { hideWithA11y } from '@/styles/mixin';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Panel } from 'rc-collapse';
-
-import { hideWithA11y } from '@/styles/mixin';
 
 export const CustomPanel = styled(Panel)<{ isPaddingLeft?: boolean; isPadding?: boolean }>`
   .rc-collapse-motion {

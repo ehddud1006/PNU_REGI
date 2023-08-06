@@ -1,11 +1,8 @@
 // import './loading.css';
-
+import * as Styled from './Loading.styles';
+import Dimmed from '@/@components/@shared/Dimmed';
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import Dimmed from '@/@components/@shared/Dimmed';
-
-import * as Styled from './Loading.styles';
 
 type DimmedProps = {
   isColor?: boolean;

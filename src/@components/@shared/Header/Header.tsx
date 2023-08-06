@@ -1,12 +1,10 @@
-import { Link } from 'react-router-dom';
-
+import * as Styled from './Header.styles';
 import Icon from '@/@components/@shared/Icon';
+import { PATH } from '@/Router';
 import loginLogoImage from '@/assets/images/loginLogo.png';
 import logoImage from '@/assets/images/logo.png';
 import User from '@/assets/images/user.png';
-import { PATH } from '@/Router';
-
-import * as Styled from './Header.styles';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (

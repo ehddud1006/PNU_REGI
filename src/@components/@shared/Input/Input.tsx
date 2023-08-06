@@ -1,6 +1,5 @@
-import { InputHTMLAttributes } from 'react';
-
 import * as Styled from './Input.styles';
+import { InputHTMLAttributes } from 'react';
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   label: string;

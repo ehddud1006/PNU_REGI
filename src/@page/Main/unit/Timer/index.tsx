@@ -1,10 +1,9 @@
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
-import { useContext, useEffect, useState } from 'react';
-
 import { DateTimeContext } from '@/@components/@shared/DateTimeProvider';
 import alarm from '@/assets/images/alarm.png';
 import downTime from '@/assets/images/downTime.png';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import { useContext, useEffect, useState } from 'react';
 
 const Timer = () => {
   const { currentDateTime, timeRemaining } = useContext(DateTimeContext);

@@ -1,10 +1,8 @@
+import Icons from './Icons';
+import { IconNames } from '@/@components/@shared/Icon/Icons';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { HTMLAttributes } from 'react';
-
-import { IconNames } from '@/@components/@shared/Icon/Icons';
-
-import Icons from './Icons';
 
 interface IconProps extends HTMLAttributes<HTMLDivElement> {
   iconName: IconNames;

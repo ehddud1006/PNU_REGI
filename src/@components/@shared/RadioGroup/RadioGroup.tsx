@@ -1,7 +1,6 @@
+import * as Styled from './RadioGroup.styles';
 import Input from '@/@components/@shared/Input';
 import type { Language } from '@/@page/Login/unit/LoginForm/LoginForm';
-
-import * as Styled from './RadioGroup.styles';
 
 type RadioButtonGroupProps = {
   label: string;
