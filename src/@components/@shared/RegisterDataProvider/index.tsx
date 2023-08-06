@@ -17,7 +17,7 @@ type DataType = {
 const data = {
   no: 1,
   application: false,
-  subjectName: '프로그래밍언어론',
+  subjectName: '인터넷과웹기초',
   subjectNumber: 'CB2600105',
   bunban: '060',
   class: '주전공',
