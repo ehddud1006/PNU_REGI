@@ -4,6 +4,7 @@ import Collapse from 'rc-collapse';
 
 export const Root = styled.div`
   display: flex;
+  background-color: #fff;
   /* position: relative;
 
   display: flex;
