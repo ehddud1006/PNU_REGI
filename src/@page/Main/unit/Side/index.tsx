@@ -13,7 +13,6 @@ const Side = () => {
         </div>
         <ul>
           <li>공과대학</li>
-          <li>전기컴퓨터공학부</li>
         </ul>
       </S.Title>
 

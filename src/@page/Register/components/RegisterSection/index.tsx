@@ -17,14 +17,6 @@ const RegisterSection = () => {
     return () => clearTimeout(timer); // Clear the timer if the component unmounts
   }, []); // Empty dependency array means this effect will run once when the component mounts
 
-  useEffect(() => {
-    console.log('hi');
-
-    return () => {
-      console.log('end');
-    };
-  }, []);
-
   return (
     <S.Root>
       <S.Tab>
